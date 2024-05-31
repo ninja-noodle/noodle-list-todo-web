@@ -65,7 +65,7 @@ db.sqlite3-journal
 
 # Flask stuff:
 instance/
-cafes.db
+todo-list.db
 .webassets-cache
 
 # Scrapy stuff:
