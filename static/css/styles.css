@@ -1,0 +1,118 @@
+:root {
+  --body-bg: #070F2B;
+  --main-container-bg: #1B1A55;
+  --border-color: #535C91;
+  --border-color-hover: #9290C3;
+  --button-bg: #535C91;
+  --button-bg-hover: #9290C3;
+  --text-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-bg);
+}
+
+#main-container {
+  width: auto;
+  background-color: var(--main-container-bg);
+  box-sizing: border-box;
+  word-wrap: break-word;
+  border-radius: 15px;
+  outline: 2px solid var(--border-color);
+  -webkit-transition: outline 0.3s ease;
+  transition: outline 0.3s ease, background-color 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+#main-container:hover {
+  outline: 5px solid var(--border-color);
+}
+
+#todo-user {
+  gap: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+#todo-user .username {
+  appearance: none;
+  display:flex;
+  gap: 8px;
+  overflow: hidden;
+  padding: 5px 10px;
+  align-items: center;
+  background-color: var(--button-bg);
+  border-radius: 25px;
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+  cursor: default;
+  -webkit-transition: background-color 300ms cubic-bezier(.23, 1, 0.32, 1);
+  transition: background-color 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+#todo-user .username:hover {
+  background-color: var(--button-bg-hover)
+}
+
+#todo-user span svg {
+  width: 30px;
+  height: 30px;
+}
+
+#todo-user button {
+  appearance: none;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 53px;
+  padding: 5px 10px;
+  align-items: center;
+  background-color: var(--button-bg);
+  border-radius: 25px;
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+  -webkit-transition: width 0.3s ease, background-color 300ms cubic-bezier(.23, 1, 0.32, 1);
+  transition: width 0.3s ease, background-color 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+/* button hover */
+#todo-user .register:hover {
+  width: 122px;
+  background-color: var(--button-bg-hover);
+}
+
+#todo-user .login:hover {
+  width: 122px;
+  background-color: var(--button-bg-hover);
+}
+
+#todo-user .logout:hover {
+  width: 122px;
+  background-color: var(--button-bg-hover);
+}
+
+
+#todo-user button svg {
+  min-width: 30px;
+  max-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+}
+
+#todo-add {
+  border-bottom: 2px solid var(--border-color);
+}
+
+#todo-list {
+  border-bottom: 2px solid var(--border-color);
+}
+
+#todo-footer {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
