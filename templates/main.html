@@ -1,24 +1,5 @@
 <div class="w-50 position-absolute top-50 start-50 translate-middle" id="main-container">
-    <form id="todo-user" class="d-flex flex-row p-3 justify-content-end">
-        <span class="username">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="300.000000pt" height="300.000000pt" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
-                <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
-                    <path d="M1365 2900 c-237 -25 -469 -110 -665 -243 -111 -76 -295 -263 -369 -376 -160 -244 -235 -493 -235 -781 0 -287 76 -539 232 -775 241 -365 617 -586 1066 -627 330 -29 671 70 952 280 278 207 477 535 540 892 19 111 19 349 0 460 -50 285 -175 534 -369 737 -259 270 -590 420 -972 437 -55 2 -136 1 -180 -4z m275 -191 c391 -48 728 -271 917 -604 197 -350 214 -766 43 -1123 -27 -56 -59 -116 -70 -132 l-21 -30 -73 64 c-192 167 -426 283 -673 333 -123 25 -403 25 -526 0 -247 -50 -475 -162 -668 -329 l-78 -67 -21 29 c-41 58 -120 237 -145 330 -78 291 -49 582 84 855 126 257 305 435 566 561 215 104 437 142 665 113z"/>
-                    <path d="M1368 2514 c-240 -58 -413 -267 -425 -514 -9 -171 42 -306 162 -425 112 -113 236 -165 394 -165 160 0 281 50 397 165 219 218 221 564 4 784 -139 142 -343 201 -532 155z"/>
-                </g>
-            </svg>
-            User
-        </span>
-        <button class="logout">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="300.000000pt" height="300.000000pt" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
-                <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
-                    <path d="M1345 2994 c-215 -24 -450 -103 -630 -214 -392 -241 -646 -636 -709 -1102 l-5 -38 610 0 609 0 0 210 c0 226 5 254 52 298 28 26 83 38 125 28 31 -8 604 -571 629 -618 8 -15 14 -41 14 -58 0 -17 -6 -43 -14 -58 -25 -47 -598 -610 -629 -618 -42 -10 -97 2 -125 28 -47 44 -52 72 -52 298 l0 210 -609 0 -610 0 5 -37 c23 -169 77 -349 146 -488 212 -424 601 -718 1073 -811 137 -27 426 -25 561 4 307 66 548 196 764 412 179 179 298 372 373 605 50 155 69 281 68 454 0 191 -16 298 -72 471 -165 506 -595 888 -1128 1000 -94 20 -352 34 -446 24z"/>
-                </g>
-            </svg>
-            Log Out
-        </button>
-    </form>
-    <form id="todo-user" class="d-flex flex-row p-3 justify-content-end">
+    <form id="todo-user" class="d-flex flex-row p-1 justify-content-end">
         <button class="register">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="300.000000pt" height="300.000000pt" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
                 <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
@@ -38,7 +19,23 @@
         </button>
     </form>
     <div id="todo-add" class="d-flex flex-column p-3">
-        <form>
+        <div class="d-flex justify-content-between" id="todo-setup">
+            <div class="d-flex flex-row" style="gap: 10px;">
+                <select class="select form-select form-select-sm" id="todo-type-select">
+                    <option>Single task</option>
+                    <option>Multitask</option>
+                </select>
+                <div class="tags-parent" id="tags-parent">
+                    <button class="tag" style="background-color: rgb(255 0 239 / 80%);">tag 1</button>
+                    <button class="tag" style="background-color: rgb(0 255 141 / 80%);">tag 2</button>
+                    <button class="tag" style="background-color: rgb(0 255 234 / 80%);">tag 3</button>
+                </div>
+            </div>
+            <button>
+
+            </button>
+        </div>
+        <form id="todo-input-field">
             <input>
             <button>
 
