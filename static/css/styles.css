@@ -152,7 +152,7 @@ body {
 }
 
 #todo-type-select {
-  width: 20rem;
+  width: 15rem;
   height: 3rem;
   padding: 10px 15px;
   background-color: var(--input-bg);
@@ -170,8 +170,11 @@ body {
 }
 
 #tags-parent {
+  max-width: 20rem;
   overflow: auto;
   white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 .tag {
